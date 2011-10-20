@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        this.output = (TextView) this.findViewById(R.id.editText3);
-        this.dh = new DataHelper(this);    
+       this.output = (TextView) this.findViewById(R.id.editText3);
+       this.dh = new DataHelper(this);    
            
         
     }
@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
     public void sendMovie(View view) {  
     	TextView title = (TextView) this.findViewById(R.id.editText1);
     	TextView year = (TextView) this.findViewById(R.id.editText2);
+    	Log.i("TEST", year.getText().toString());
     	this.dh.insert(title.getText().toString(), year.getText().toString());
     	
         StringBuilder sb = new StringBuilder();

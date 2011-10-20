@@ -21,7 +21,7 @@ public class DataHelper {
 	 
 	   private SQLiteStatement insertStmt;
 	   private static final String INSERT = "insert into "
-	      + TABLE_NAME + "(title) values (?)";
+	      + TABLE_NAME + " (title) values (?)";
 	 
 	   public DataHelper(Context context) {
 	      this.context = context;
@@ -42,7 +42,7 @@ public class DataHelper {
 	   public List<String> selectAll() {
 	      List<String> list = new ArrayList<String>();
 	      Cursor cursor = this.db.query(TABLE_NAME, new String[] { "title" },
-	        null, null, null, null, "name desc");
+	        null, null, null, null, "title desc");
 	      if (cursor.moveToFirst()) {
 	         do {
 	            list.add(cursor.getString(0));
