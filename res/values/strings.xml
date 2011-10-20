@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MainActivity!</string>
-    <string name="app_name">422Project</string>
+    <string name="hello">Welcome to the Movie Info Organizer!</string>
+    <string name="app_name">Movie Info Organizer</string>
+    <string name="feedbacktype1">Praise</string>  
+    <string name="feedbacktype2">Gripe</string>  
+    <string name="feedbacktype3">Suggestion</string>  
+    <string name="feedbacktype4">Bug</string> 
+    <string name="feedbackname">Name</string> 
+    <string name="title">Movie Title</string> 
+    <string name="year">Year</string> 
+    <string name="submit">Add Movie</string> 
 </resources>
